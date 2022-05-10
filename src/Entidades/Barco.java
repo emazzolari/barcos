@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Barco {
 
-    protected int matricula;
+    protected double matricula;
     protected int eslora;
     protected int anioFabricacion;
 
@@ -14,11 +14,12 @@ public class Barco {
     public void crearBarco() {
         Scanner leer = new Scanner(System.in);
 
-        System.out.println("Ingrese Matricula del barco");
-        matricula = (leer.nextInt());
-        System.out.println("Ingrese eslora");
+        matricula = Math.round(Math.random()*1000);
+        System.out.println("La Matricula del barco es "+matricula);
+        
+        System.out.println("Ingrese los metros de eslora que desea ");
         eslora = (leer.nextInt());
-        System.out.println("Ingrese Año de fabricación");
+        System.out.println("Ingrese Año de fabricación que desea ");
         anioFabricacion = (leer.nextInt());
 
     }
@@ -29,9 +30,7 @@ public class Barco {
         this.anioFabricacion = anioFabricacion;
     }
 
-    public int getMatricula() {
-        return matricula;
-    }
+    
 
     public void setMatricula(int matricula) {
         this.matricula = matricula;

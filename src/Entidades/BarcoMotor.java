@@ -26,9 +26,7 @@ public class BarcoMotor extends Barco {
         this.cv = cv;
     }
 
-    public int getMatricula() {
-        return matricula;
-    }
+   
 
     public void setMatricula(int matricula) {
         this.matricula = matricula;

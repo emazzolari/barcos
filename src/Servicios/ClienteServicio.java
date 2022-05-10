@@ -39,8 +39,9 @@ public class ClienteServicio {
 
         cx.setFechaDevolucion(diaDevolucion);
         
-        System.out.println("Ingrese el número de amarre");
-        cx.setAmarre(leer.nextInt());
+        System.out.println("Usted va a alquilar "+(cx.getFechaDevolucion().getTime()-cx.getFechaAlquiler().getTime())/86400000+" días");
+        //System.out.println("Ingrese el número de amarre");
+       // cx.setAmarre(leer.nextInt());
 
 //        LocalDate dateBefore = LocalDate.of(anio1, mes1, dia1);
 //        LocalDate dateAfter = LocalDate.of(anio2, mes2, dia2);
